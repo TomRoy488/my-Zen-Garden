@@ -1,0 +1,481 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+* a:hover {
+  color: rgba(0, 0, 0, 0.658) !important;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #c879b2;
+  overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* s1 { */
+.banner-holder {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.banner-holder h1 {
+  display: inline-block;
+  font-size: 16px;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -40px;
+  top: 100px;
+  color: #fff;
+}
+
+header {
+  background-color: #0d2c40;
+  display: flex;
+  flex: 0 0 310px;
+  height: 100%;
+  margin-left: 308px;
+}
+header h2 {
+  font-size: 40px;
+  position: relative;
+  align-self: flex-start;
+  top: 30%;
+  left: 20px;
+  color: #fff;
+}
+header::after {
+  content: "";
+  background-color: #0d2c40;
+  background-image: url("http://csszengarden.com/221/icon-star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  top: 70%;
+  height: 300px;
+  width: 330px;
+  z-index: 10;
+
+}
+.summary {
+  flex: 0 0 35%;
+  color: white;
+  align-self: flex-start;
+  margin-top: 230px;
+}
+.summary a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding: 0 0 5px;
+}
+.summary p {
+  margin-left: 20px;
+}
+.summary p:first-child {
+  margin-bottom: 40px;
+}
+.summary::after {
+  content: "";
+  background-color: #0d2c40;
+  background-image: url("http://csszengarden.com/221/icons-3-pack.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  top: 70%;
+  height: 300px;
+  width: 900px;
+  z-index: 10;
+}
+/* s1 /} */
+
+/* s2 { */
+
+.preamble {
+  background-color: #f6efe5;
+  display: flex;
+  padding: 120px 0;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  top: 82px;
+}
+.aside-p {
+  background-color: #2cc3dac2;
+  width: 300px;
+  height: 120vh;
+  position: absolute;
+  margin-left: 618px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  color: #fff;
+  z-index: 9;
+}
+.preamble-col1 {
+  width: 40%;
+  margin-right: 300px;
+  padding-right: 10px;
+}
+.preamble-col1 h3 {
+  font-size: 26px;
+}
+.preamble-col1 p {
+  margin: 30px 0;
+}
+
+/* s2 /} */
+
+/* s3 { */
+.supporting {
+  position: relative;
+  display: block;
+  margin-top: 80px;
+  background-color: #f6efe5;
+  padding-bottom: 152px;
+}
+.supporting::before {
+  content: "";
+  height: 155vh;
+  width: 100%;
+  background-image: url("http://csszengarden.com/221/mid-century-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.explanation {
+  margin-top: 220px;
+  display: inline-block;
+  background-color: #0d2c40;
+  color: #fff;
+  position: relative;
+  padding: 80px 200px 30px 100px;
+}
+.explanation h3 {
+  transform: rotate(-90deg);
+  display: inline-block;
+  position: absolute;
+  left: -100px;
+  top: 250px;
+  font-size: 24px;
+}
+.explanation p {
+  width: 350px;
+  margin-bottom: 50px;
+}
+.explanation::after {
+  content: "";
+  background-image: url("http://csszengarden.com/221/icon-half.svg");
+  width: 360px;
+  height: 260px;
+  background-size: contain;
+  position: absolute;
+  right: -100px;
+  top: 180px;
+}
+.participation {
+  background-color: #f6efe5;
+  position: absolute;
+  width: 600px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 22%;
+  top: 45%;
+}
+.participation h3 {
+  font-size: 26px;
+}
+.participation a {
+  color: #000;
+}
+
+.benefits {
+  background-color: #2cc3dac2;
+  width: 300px;
+  height: 150vh;
+  position: absolute;
+  margin-left: 934px;
+  padding: 0 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9;
+  gap: 20px;
+}
+.benefits::before {
+  content: "";
+  background-image: url("http://csszengarden.com/221/icon-circles.svg");
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  background-size: contain;
+  left: 0;
+  right: 0;
+}
+.benefits h3 {
+  margin-top: 80px;
+  font-size: 25px;
+}
+
+.requirements {
+  margin-top: 900px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 20px;
+  width: 55%;
+  transform: translateX(650px);
+}
+.requirements h3 {
+  transform: rotate(-90deg);
+  display: inline-block;
+  position: absolute;
+  left: -250px;
+  top: 50px;
+  font-size: 45px;
+}
+.requirements::before {
+  content: "";
+  background-image: url("http://csszengarden.com/221/mid-century-2.jpg");
+  width: 65%;
+  background-size: cover;
+  position: absolute;
+  left: -560px;
+  height: 600px;
+  top: -20px;
+}
+.req-col1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.requirements a {
+  color: #000;
+}
+footer {
+  position: absolute;
+  top: 41%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #000;
+  left: 25px;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* s3 /} */
+
+/* s4 { */
+aside {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+}
+.design-selection {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+.design-selection::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  aspect-ratio: 1;
+  background-color: #0d2c40;
+  top: 0;
+  left: 319px;
+}
+.select {
+  position: absolute;
+  left: 30px;
+  font-size: 22px;
+  top: 400px;
+}
+.design-selection nav {
+  position: relative;
+  top: 280px;
+}
+.design-selection nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.design-selection nav ul li {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  aspect-ratio: 1;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+.design-selection nav ul li span {
+  font-size: 80px;
+}
+.design-selection nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.design-selection nav ul li:nth-child(1),
+.design-selection nav ul li:nth-child(5) {
+  background-color: #0d2c40;
+}
+.design-selection nav ul li:nth-child(2),
+.design-selection nav ul li:nth-child(6) {
+  background-color: #f15a30;
+}
+.design-selection nav ul li:nth-child(3),
+.design-selection nav ul li:nth-child(7) {
+  background-color: #31c5da;
+}
+.design-selection nav ul li:nth-child(4),
+.design-selection nav ul li:nth-child(8) {
+  background-color: #f15a30;
+}
+aside ul {
+  list-style: none;
+}
+.design-archives {
+  background-color: #31c5da;
+  width: 300px;
+  position: absolute;
+  right: 300px;
+  top: 890px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 20px;
+}
+.design-archives a,
+.zen-resources a {
+  color: #000;
+}
+.archives {
+  transform: rotate(-90deg);
+  display: inline-block;
+  position: absolute;
+  left: -100px;
+  top: 270px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.zen-resources {
+  background-color: #31c5da;
+  width: 300px;
+  position: absolute;
+  right: 300px;
+  top: 1240px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+}
+.resources {
+  transform: rotate(-90deg);
+  display: inline-block;
+  position: absolute;
+  left: -100px;
+  top: 230px;
+  font-size: 25px;
+  color: #fff;
+}
+.zen-resources::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  aspect-ratio: 1;
+  background-color: #31c5da;
+  background-image: url("http://csszengarden.com/221/icon-circles.svg");
+  background-size: contain;
+  top: 400px;
+  right: 0px;
+}
+
+/* s4 /} */
